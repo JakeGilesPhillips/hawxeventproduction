@@ -6,5 +6,11 @@
   "repository": "git@github-personal:JakeGilesPhillips/hawxeventproduction.git",
   "author": "JakeGilesPhillips <jakegilesphillips@gmail.com>",
   "license": "MIT",
-  "private": true
+  "private": true,
+  "devDependencies": {
+    "@babel/cli": "^7.1.0",
+    "@babel/core": "^7.1.0",
+    "@babel/preset-env": "^7.1.0",
+    "@babel/preset-react": "^7.0.0"
+  }
 }
