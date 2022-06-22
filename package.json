@@ -1,0 +1,10 @@
+{
+  "name": "hawxeventproduction",
+  "version": "1.0.0",
+  "description": "Hawx Event Production Website",
+  "main": "index.js",
+  "repository": "git@github-personal:JakeGilesPhillips/hawxeventproduction.git",
+  "author": "JakeGilesPhillips <jakegilesphillips@gmail.com>",
+  "license": "MIT",
+  "private": true
+}
