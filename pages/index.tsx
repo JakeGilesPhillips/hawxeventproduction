@@ -40,7 +40,7 @@ const Home = (props: HomeProps) => {
 			{sections
 				.sort((a, b) => a.fields.order - b.fields.order)
 				.map((section, index) => (
-					<AnimatedSection key={index} section={section} {...getScrollMinMax(sectionHeight, index)} />
+					<AnimatedSection key={index} index={index} section={section} {...getScrollMinMax(sectionHeight, index)} />
 				))}
 		</div>
 	);
