@@ -1,9 +1,9 @@
-import Head from 'next/head';
-import { useRouter } from 'next/router';
-import { PropsWithChildren } from 'react';
+import Head from "next/head";
+import { useRouter } from "next/router";
+import { PropsWithChildren } from "react";
 
-import { extractPageName } from '../../utils/helpers';
-import styles from './Layout.module.css';
+import { extractPageName } from "../../../utils/helpers";
+import styles from "./Layout.module.css";
 
 const Layout = ({ children }: PropsWithChildren) => {
 	const router = useRouter();

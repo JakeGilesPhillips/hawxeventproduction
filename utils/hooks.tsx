@@ -1,8 +1,8 @@
-import { useEffect, useState } from 'react';
-import { Size } from './models';
+import { useEffect, useState } from "react";
+import { Size } from "./models";
 
 export const useWindowSize = (): Size => {
-	const initial: Size = { width: 0, height: 0 };
+	const initial: Size = { width: undefined, height: undefined };
 	const [windowSize, setWindowSize] = useState<Size>(initial);
 
 	useEffect(() => {
@@ -12,8 +12,8 @@ export const useWindowSize = (): Size => {
 		};
 
 		handleResize();
-		window.addEventListener('resize', handleResize);
-		return () => window.removeEventListener('resize', handleResize);
+		window.addEventListener("resize", handleResize);
+		return () => window.removeEventListener("resize", handleResize);
 	}, []);
 	return windowSize;
 };
@@ -29,8 +29,8 @@ export const useScrollPosition = (): number => {
 		};
 
 		handleScroll();
-		window.addEventListener('scroll', handleScroll);
-		return () => window.removeEventListener('scroll', handleScroll);
+		window.addEventListener("scroll", handleScroll);
+		return () => window.removeEventListener("scroll", handleScroll);
 	}, []);
 	return scrollPosition;
 };

@@ -1,0 +1,16 @@
+@import "styles/variables";
+
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: $header-height;
+  margin-top: 40px;
+  z-index: 999999;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}

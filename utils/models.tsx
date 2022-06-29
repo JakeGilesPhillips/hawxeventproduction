@@ -1,9 +1,23 @@
-import { Document } from '@contentful/rich-text-types';
-import { Asset } from 'contentful';
+import { Document } from "@contentful/rich-text-types";
+import { Asset, Entry } from "contentful";
 
 export interface Size {
-	width: number;
-	height: number;
+	width?: number;
+	height?: number;
+}
+
+export interface ISection {
+	title: string;
+	logo: Asset;
+	description: Document;
+	color: string;
+	order: number;
+}
+
+export interface IScrollSection {
+	section: Entry<ISection>;
+	scrollMin: number;
+	scrollMax: number;
 }
 
 export interface IEvent {
