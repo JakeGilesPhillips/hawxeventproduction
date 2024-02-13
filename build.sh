@@ -1,5 +1,4 @@
 #!/bin/sh
- 
 # Install PHP & WGET
 yum install -y amazon-linux-extras
 amazon-linux-extras enable php8.1
